@@ -17,3 +17,9 @@
   margin-right: 0;
   background: linear-gradient(to left, rgb(219, 53, 53), grey);
 }
+
+@media screen and (max-width: 600px) {
+  .project__Card {
+    margin: 20px;
+  }
+}

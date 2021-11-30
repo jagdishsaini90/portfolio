@@ -19,12 +19,12 @@ const index = () => {
             </a>
           </li>
           <li className="header__li">
-            <a href="/projects" className="header__link">
+            <a href="https://www.linkedin.com/in/jagdish-saini-248152193" className="header__link">
               <img src={link} alt="linkedin" width="50"   />
             </a>
           </li>
           <li className="header__li">
-            <a href="/blogs" className="header__link">
+            <a href="https://twitter.com/Jagdish904" className="header__link">
               <img src={twitter} alt="twitter" width="50" />
             </a>
           </li>

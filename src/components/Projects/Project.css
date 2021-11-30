@@ -12,6 +12,7 @@
   background: linear-gradient(to left, red, yellow);
   margin-right: 20px;
   margin-top: 30px;
+  cursor: pointer;
 }
 .github__button {
   margin-right: 0;

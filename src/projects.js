@@ -62,4 +62,12 @@ export const PROJECTS = [
     link: "https://palindrome-birthday-six.vercel.app/",
     github: "https://github.com/jagdishsaini90/pailndrome-birthday",
   },
+        {
+    name: "CLI APP",
+    date: "November 2021",
+    description:
+      "A CLI app built with nodeJS. You can send this to your friends and find out who really knows you",
+    link: "https://replit.com/@jsaini97600/CLI-APP?embed=1&output=1",
+    github: "https://replit.com/@jsaini97600/CLI-APP?embed=1&output=1",
+  },
 ];

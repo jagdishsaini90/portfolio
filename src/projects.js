@@ -68,6 +68,6 @@ export const PROJECTS = [
     description:
       "A CLI app built with nodeJS. You can send this to your friends and find out who really knows you",
     link: "https://replit.com/@jsaini97600/CLI-APP?embed=1&output=1",
-    github: "https://replit.com/@jsaini97600/CLI-APP?embed=1&output=1",
+    github: "https://github.com/jagdishsaini90/CLI-APP",
   },
 ];

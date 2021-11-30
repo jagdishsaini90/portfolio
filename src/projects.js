@@ -54,4 +54,12 @@ export const PROJECTS = [
     link: "https://minion-translator0.netlify.app/",
     github: "https://github.com/jagdishsaini90/minion-translator",
   },
+    {
+    name: "palindrome-birthday",
+    date: "November 2021",
+    description:
+      "App which checks whether your birthday is a palindrome birthday or not.",
+    link: "https://palindrome-birthday-six.vercel.app/",
+    github: "https://github.com/jagdishsaini90/pailndrome-birthday",
+  },
 ];

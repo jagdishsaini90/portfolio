@@ -12,7 +12,8 @@ const DemoProjects = () => {
       </Fade>
       <div className="tech2">
         <Rotate bottom left>
-          <div>
+          <a href="https://github.com/jagdishsaini90/fun-with-triangles" style={{textDecoration:"none"}}>
+            <div>
             <div className="card">
               <img
                 src={img8}
@@ -24,9 +25,11 @@ const DemoProjects = () => {
               <h2>Fun with Triangles</h2>
             </Fade>
           </div>
+          </a>
         </Rotate>
         <Fade bottom>
-          <div>
+          <a href="https://github.com/jagdishsaini90/lucky-birthday" style={{textDecoration:"none"}}>
+            <div>
             <div className="card">
               <img
                 src={img10}
@@ -38,9 +41,11 @@ const DemoProjects = () => {
               <h2>is Your birthday lucky</h2>
             </Fade>
           </div>
+          </a>
         </Fade>
         <Rotate bottom right>
-          <div>
+          <a href="https://github.com/jagdishsaini90/minion-translator" style={{textDecoration:"none"}}>
+            <div>
             <div className="card">
               <img
                 src={img9}
@@ -52,6 +57,7 @@ const DemoProjects = () => {
               <h2>Minion translater</h2>
             </Fade>
           </div>
+          </a>
         </Rotate>
       </div>
     </div>

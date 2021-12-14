@@ -7,7 +7,7 @@ const Card = ({ doc }) => {
     <div className="project__Card">
       <h2>{doc.name}</h2>
       <h5 style={{ margin: "10px 0 10px 0" }}>{doc.date}</h5>
-      <h3 style={{ color: "grey" }}>{doc.description}</h3>
+      <h3 style={{ color: "black" }}>{doc.description}</h3>
       <a href={doc.link} style={{ cursor: "pointer" }}>
         <button className="live__button">Live Project</button>
       </a>

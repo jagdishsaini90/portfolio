@@ -9,14 +9,15 @@
   width: 200px;
   height: 40px;
   border-radius: 5px;
-  background: linear-gradient(to left, red, yellow);
+  background: linear-gradient(to left, rgb(253, 61, 61), rgb(253, 253, 108));
   margin-right: 20px;
   margin-top: 30px;
   cursor: pointer;
+  font-weight: bold;
 }
 .github__button {
   margin-right: 0;
-  background: linear-gradient(to left, rgb(219, 53, 53), grey);
+  background: linear-gradient(to left, rgb(253, 113, 113), rgb(226, 223, 223));
 }
 
 @media screen and (max-width: 600px) {

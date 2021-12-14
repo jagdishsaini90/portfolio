@@ -8,6 +8,9 @@
   align-items: center;
   flex-direction: row;
 }
+.footer {
+  border-radius: 10px 10px 0 0;
+}
 .header {
   height: 15vh;
 }
@@ -15,6 +18,7 @@
 .header__logo,
 .footer__logo {
   margin: 0 0 0 2em;
+  font-size: 2rem;
 }
 
 h2 {
@@ -23,6 +27,7 @@ h2 {
 
 .header__link {
   text-decoration: none;
+  color: white;
 }
 .header__list,
 .footer__list {
@@ -42,6 +47,7 @@ h2 {
 .header__li {
   padding-bottom: 10px;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 .blog {
   min-height: 100vh;
@@ -51,7 +57,6 @@ h2 {
   .header,
   .footer {
     flex-direction: column;
-    border-radius: 0 0 20px 20px;
   }
   .header__logo,
   .footer__logo {

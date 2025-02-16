@@ -4,4 +4,7 @@
 
 :root {
   font-size: 32px;
+  scrollbar-width: none;
+  width: 100%;
+  background: #FFE26E;
 }

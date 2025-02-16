@@ -2,7 +2,7 @@
 
 import useTypingEffect from "../hooks/useTypeEffect"; // Import the hook
 
-const TypingText = ({text}) => {
+const TypingText = ({text} : {text:string}) => {
   const { displayText } = useTypingEffect(text, 300, 300);
 
       return <>

@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Jagdish Saini",
   description: "Portfolio of Jagdish Saini, a frontend developer.",
+  icons: {
+    icon: "/favicon.ico.webp",
+  },
 };
 
 export default function RootLayout({ children }) {

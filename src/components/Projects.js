@@ -26,6 +26,14 @@ const iconMap = {
 
 const projects = [
   {
+    title: "Task Manager App",
+    description:
+      "A task manager app that allows users to create, update, and delete tasks. The app also features user authentication and authorization",
+    skills: ["Next.js", "React.js", "Javascript", "Redux Toolkit"],
+    github: "https://github.com/jagdishsaini90/task-Manager",
+    live: "https://task-manager-wheat-alpha.vercel.app/",
+  },
+  {
     title: "Swiggy Clone",
     description:
       "A Swiggy-like food ordering web app featuring real-time menu browsing, cart management, and seamless checkout experience.",

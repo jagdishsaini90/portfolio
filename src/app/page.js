@@ -23,8 +23,8 @@ export default function Home() {
 
         <div className="mt-10 flex justify-center">
           <a
-            href="/Jagdish_Saini_Resume.pdf"
-            download
+            href="https://drive.google.com/file/d/11Nic9eHF0zyCyC3TpYWhQeBafNL4nRdV/view?usp=sharing"
+            target="_blank"
             className="inline-flex items-center gap-2 backdrop-blur-md bg-white/10 border border-white/30 text-cyan-300 hover:text-white hover:bg-cyan-600 px-6 py-3 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl"
           >
             <Download className="w-5 h-5" />

@@ -1,62 +1,38 @@
+"use client";
+
+import { motion } from "motion/react";
+
 const experiences = [
   {
+    company: "Mercari India",
+    role: "Software Engineer 2 - FullStack",
+    duration: "April 2025 - Present",
+    location: "Bangalore, IN",
+    highlights: [
+      {
+        points: [
+          "Owned and built the RMT platform from scratch (0 to 1) using React.js, TypeScript, and Vite, driving product architecture, technical design, and delivery of an LLM-powered workflow automation solution that reduced operational processing time from 1–2 weeks to 1 day.",
+          "Designed and developed scalable, responsive frontend workflows using React.js, TypeScript, and GraphQL for the Items Moderation platform, streamlining UI interactions and reducing moderation turnaround time from several days to a few hours.",
+          "Designed and implemented a reusable Playwright test automation framework integrated with CI/CD pipelines, building end-to-end and regression test suites that achieved 80%+ workflow coverage and improved release reliability.",
+          "Owned full-stack implementation of 3+ new pages from the ground up, building Go backend services with gRPC, Protobuf, and REST APIs, integrated with Google Cloud Spanner and Kubernetes, independently delivering features without backend team dependency.",
+          "Owned development of moderation features for Hallo using Next.js and TypeScript, building the moderation workflows from the ground up.",
+        ],
+      },
+    ],
+  },
+  {
     company: "Zscaler",
-    role: "Software Development Engineer",
-    duration: "Feb 2023 - Present",
-    highlights: [
-      {
-        category: "ZIA",
-        points: [
-          "Collaborated in the migration from Backbone.js to React.js with Redux, contributing to performance optimization and reduced load times across the application.",
-          "Worked on migrating and optimizing Insights and Admin pages, improving user experience and functionality within these key sections.",
-          "Refactored legacy code by eliminating redundant conditional logic, improving the efficiency of the DNS Control Policy page.",
-          "Handled the migration of critical pages such as URL Categories, VPN Credentials, and Cloud NSS, enhancing performance and ensuring seamless functionality.",
-        ],
-      },
-      {
-        category: "CSS",
-        points: [
-          "Implemented dynamic theming capabilities to enable seamless theme switching without requiring page reloads.",
-        ],
-      },
-      {
-        category: "Playwright Automation",
-        points: [
-          "Developed and executed automated test scripts using Playwright, achieving 70% code coverage and improving resilience for ZIA and OneUI applications.",
-        ],
-      },
-      {
-        category: "OneUI",
-        points: [
-          "Built reusable TypeScript components, such as charts, with strict type checking to ensure consistent UI/UX design and alignment with visual standards.",
-        ],
-      },
-    ],
-  },
-  {
-    company: "Kashware",
-    role: "Software Development Engineer Intern",
-    duration: "Mar 2022 - June 2022",
+    role: "Software Engineer 1 - Frontend",
+    duration: "Feb 2023 - Mar 2025",
+    location: "Bangalore, IN",
     highlights: [
       {
         points: [
-          "Developed intuitive and responsive user interfaces for Kashware’s web application using modern frontend technologies.",
-          "Collaborated closely with designers and backend teams to translate UI/UX wireframes into functional and visually appealing components.",
-          "Ensured cross-browser compatibility, optimized performance, and implemented reusable components for scalable UI development.",
-        ],
-      },
-    ],
-  },
-  {
-    company: "GharPeShiksha",
-    role: "Frontend Developer Intern",
-    duration: "Jan 2022 - Mar 2022",
-    highlights: [
-      {
-        points: [
-          "Developed a dynamic checkout page for course enrollment, ensuring a smooth and user-friendly payment experience.",
-          "Designed and implemented a new responsive homepage for the web application, improving navigation and user engagement.",
-          "Enhanced UI consistency and performance by optimizing layout structures and reusing modular components across the platform.",
+          "Migrated legacy Backbone.js modules to React.js and Redux, modernizing frontend architecture and improving component maintainability, application state management, and performance.",
+          "Developed and optimized React.js-based Insights and Admin interfaces, improving responsive UI design, usability, and maintainability across critical application workflows.",
+          "Refactored legacy conditional logic in DNS Control Policy, improving efficiency and reducing technical debt.",
+          "Implemented dynamic theming to enable seamless theme switching without page reloads.",
+          "Developed Playwright E2E automation for ZIA and OneUI, achieving 70% workflow coverage and improving regression detection.",
         ],
       },
     ],
@@ -69,31 +45,58 @@ export default function Experience() {
       id="experience"
       className="min-h-screen w-full px-4 py-32 flex flex-col items-center"
     >
-      <h2 className="text-4xl font-bold mb-12 text-center">Experience</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        className="text-4xl font-bold mb-12 text-center tracking-tight"
+      >
+        Experience
+      </motion.h2>
 
       <div className="relative border-l-4 border-white/20 pl-6 max-w-3xl w-full">
         {experiences.map((exp, index) => (
-          <div key={index} className="mb-12 relative">
-            <div className="absolute left-[-0.75rem] top-0 w-4 h-4 bg-white rounded-full border-4 border-gray-950" />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
+            className="mb-12 relative"
+          >
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: index * 0.15 }}
+              className="absolute left-[-0.75rem] top-0 w-4 h-4 bg-cyan-400 rounded-full border-4 border-gray-950 shadow-[0_0_12px_rgba(6,182,212,0.8)]"
+            />
             <h3 className="text-xl font-semibold text-cyan-400">
               {exp.role} @ {exp.company}
             </h3>
-            <p className="text-sm text-gray-400 mb-2">{exp.duration}</p>
-            <ul className="list-disc pl-5 text-gray-300 space-y-2">
+            <p className="text-sm text-gray-400 mb-4">
+              {exp.duration} {exp.location && `• ${exp.location}`}
+            </p>
+            <div className="text-gray-300 space-y-4">
               {exp.highlights.map((highlight, i) => (
                 <div key={i}>
                   {highlight.category && (
-                    <strong className="text-indigo-400">
+                    <h4 className="text-indigo-400 font-semibold mb-1">
                       {highlight.category}
-                    </strong>
+                    </h4>
                   )}
-                  {highlight.points.map((point, j) => (
-                    <li key={j}>{point}</li>
-                  ))}
+                  <ul className="list-disc pl-5 space-y-2">
+                    {highlight.points.map((point, j) => (
+                      <li key={j} className="leading-relaxed">
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
-            </ul>
-          </div>
+            </div>
+          </motion.div>
         ))}
       </div>
     </section>

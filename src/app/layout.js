@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Jagdish Saini",
-  description: "Portfolio of Jagdish Saini, a frontend developer.",
+  description: "Portfolio of Jagdish Saini, a Full Stack Engineer.",
   icons: {
-    icon: "/favicon.ico.webp",
+    icon: "/favicon.ico",
   },
 };
 
